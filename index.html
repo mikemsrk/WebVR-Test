@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+
+    <meta charset="utf-8">
+    <title>VR Interactive Simulation</title>
+  </head>
+  <body>
+    <script src="client/lib/three.js"></script>
+    <script src="client/controls/PointerLockControls.js"></script>
+    <script src="client/lib/VR/VRControls.js"></script>
+    <script src="client/lib/VR/VREffect.js"></script>
+
+    <div id="blocker">
+      <div id="instructions">
+        <span style="font-size:40px">Click to play</span>
+        <br />
+        (W, A, S, D = Move, SPACE = Jump (purely for your own amusement), MOUSE = Look around)
+        <br />
+        Hold SHIFT to talk
+      </div>
+    </div>
+
+    <!--<script> var socket = io(); </script>-->
+
+    <!-- Main game -->
+    <script src="client/env.js" charset="utf-8"></script>
+  </body>
+</html>

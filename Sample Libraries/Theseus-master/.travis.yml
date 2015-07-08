@@ -1,0 +1,11 @@
+language: go
+
+services: mongodb
+
+before_script:
+  - go get
+  - npm install
+
+script:
+  - go test
+  - npm run test
