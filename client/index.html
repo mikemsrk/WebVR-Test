@@ -7,10 +7,12 @@
     <title>VR Interactive Simulation</title>
   </head>
   <body>
-    <script src="client/lib/three.js"></script>
-    <script src="client/controls/PointerLockControls.js"></script>
-    <script src="client/lib/VR/VRControls.js"></script>
-    <script src="client/lib/VR/VREffect.js"></script>
+    <!--<script src="controls/PointerLockControls.js"></script>--> 
+    <script src="lib/three.js"></script>
+    <script src="lib/FPControls.js"></script>
+    <script src="lib/VR/VRControls.js"></script>
+    <script src="lib/VR/VREffect.js"></script>
+    <script src="lib/VR/ObjectLoader.js"></script>
 
     <div id="blocker">
       <div id="instructions">
@@ -22,9 +24,7 @@
       </div>
     </div>
 
-    <!--<script> var socket = io(); </script>-->
-
     <!-- Main game -->
-    <script src="client/env.js" charset="utf-8"></script>
+    <script src="env.js" charset="utf-8"></script>
   </body>
 </html>

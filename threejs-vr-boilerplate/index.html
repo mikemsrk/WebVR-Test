@@ -29,6 +29,7 @@
 		document.body.appendChild( renderer.domElement );
 		var scene = new THREE.Scene();
 		var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0, 100 );
+
 		var controls = new THREE.VRControls( camera );
 		var effect = new THREE.VREffect( renderer );
 		effect.setSize( window.innerWidth, window.innerHeight );

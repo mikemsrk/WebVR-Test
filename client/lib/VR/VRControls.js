@@ -6,7 +6,6 @@
 THREE.VRControls = function ( object, onError ) {
 
 	var scope = this;
-
 	var vrInputs = [];
 
 	function filterInvalidDevices( devices ) {
@@ -73,17 +72,21 @@ THREE.VRControls = function ( object, onError ) {
 
 			var state = vrInput.getState();
 
-			if ( state.orientation !== null ) {
+			if ( state.orientation !== null) {
 
 				object.quaternion.copy( state.orientation );
+				// object.rotation.x = -state.orientation.x;
+				// object.rotation.y = -state.orientation.y;
+				// console.log(state.orientation);
 
 			}
 
-			if ( state.position !== null ) {
+			// Infrared sensor positional tracking with the goggle.
+			// if ( state.position !== null ) {
 
-				object.position.copy( state.position ).multiplyScalar( scope.scale );
+			// 	object.position.copy( state.position ).multiplyScalar( scope.scale );
 
-			}
+			// }
 
 		}
 
